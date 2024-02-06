@@ -10,7 +10,7 @@
 
     <audio controls autoplay hidden loop src="music/bg-music.MP3"></audio>
 
-    <h1>Mahal ka, Palagi!</h1>
+    <h1 id="title">Mahal ka, Palagi!</h1>
     <h2>Dear, Snorlaxx</h2>
 
     <div class="main">
@@ -85,6 +85,12 @@
         </div>
     </div>
 
+    <script>
+        document.getElementById("title").addEventListener("click", function() {
+            var audio = document.getElementById("bg");
+            audio.play();
+        });
+    </script>
 
     
 </body>
